@@ -87,8 +87,11 @@ def main():
             data = result["data"]
 
             print(f"Order ID      : {data.get('orderId')}")
+            print(f"Symbol        : {data.get('symbol')}")
+            print(f"Side          : {data.get('side')}")
+            print(f"Order Type    : {data.get('type')}")
             print(f"Status        : {data.get('status')}")
-            print(f"Executed Qty  : {data.get('executedQty', 'N/A')}")
+            print(f"Executed Qty  : {data.get('executedQty', 'N/A')})")
             print(f"Avg Price     : {data.get('avgPrice', 'N/A')}")
 
             print("\n✅ Order placed successfully.")
